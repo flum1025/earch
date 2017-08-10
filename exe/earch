@@ -20,5 +20,9 @@ rescue OptionParser::InvalidOption, OptionParser::MissingArgument => e
 end
 
 optparse
-earch = Earch.new(Parameter[:file])
-Parameter[:debug] ? earch.debug(File.read(Parameter[:debug])) : earch.start
+if Parameter[:file]
+  earch = Earch.new(Parameter[:file])
+  Parameter[:debug] ? earch.debug(File.read(Parameter[:debug])) : earch.start
+else
+  STDERR.puts "missing argument: -s"
+end
