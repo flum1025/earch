@@ -52,21 +52,12 @@ api_key|Required|Get from [Twitter Application Management](https://apps.twitter.
 
 This key is for `Slack` configuration.
 
-#### api_key
-
-Get from [Bots](https://your-team.slack.com/apps/manage/custom-integrations)
-
-#### user_icon
-
-Set the [Slack emoji](https://flum1025.slack.com/customize/emoji)
-
-####  notify_channel
-
-Specify the notification channel
-
-####  icon
-
-Set your Twitter account icon
+Argument|Required|Description
+---|---|---
+api_key|Required|Get from [Bots](https://your-team.slack.com/apps/manage/custom-integrations)
+user_icon|Required|Set the [Slack emoji](https://flum1025.slack.com/customize/emoji)
+notify_channel|Required|Specify the notification channel
+icon|Required|Set your Twitter account icon
 
 ### rules
 
