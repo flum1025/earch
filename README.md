@@ -66,20 +66,26 @@ The value corresponding to a key is need to `Array`. You can use multiple rules 
 Argument|DataType|Example|Comments
 ---|---|---|---
 text|String|`text: tweet text`
-||Regexp|'text: !ruby/regexp /^\d+$/'
-user_id
-user_name
-screen_name
-favorite_count
-retweet_count
-lang
-user_lang
-source
-reply
+||Regexp|`text: !ruby/regexp /^\d+$/`
+user_id|String|`user_id: "12345"`|Not a number
+user_name|String|`user_name: twitter name`
+||Regexp|`user_name: !ruby/regexp /^[A-Z]+$/`
+screen_name|String|`screen_name: screen name`
+||Regexp|`screen_name: !ruby/regexp /^@test[0-9]+/`
+favorite_count|Integer|`favorite_count: 50`|Get over 50 the number of favorites
+||Range|`favorite_count: !ruby/range 10..20`|The number of favorites is 10 to 20
+retweet_count|Integer|`retweet_count: 50`
+||Range|`retweet_count: !ruby/range 10..20`
+lang|String|`lang: ja`
+||Regexp|`lang: !ruby/regexp /(ja|en)/`
+user_lang|`user_lang: ja`
+||Regexp|`user_lang: !ruby/regexp /(ja|en)/`
+source|Array<String>|`source: <br>-TweetDeck`
 hashtag
 mention
-quote
-retweet
+reply|Boolean|`reply: false`
+quote|Boolean|`quote: false`
+retweet|Boolean|`retweet: false`
 
 
 ## Contributing
