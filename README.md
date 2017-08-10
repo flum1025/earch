@@ -36,7 +36,16 @@ slack:
   notify_channel: '#earch'  #require
   icon: ':flum_:'
 rules:                      #require
-  - text: !ruby/regexp /.+/
+  - text: !ruby/regexp /test.*/
+    screen_name: twitterdev
+  - hashtag:
+      - test
+      - events
+    favorite_count: 50
+  - lang: ja
+    retweet: false
+    quote: false
+    reply: true
 ```
 
 ### twitter
