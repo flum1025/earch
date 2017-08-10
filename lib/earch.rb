@@ -14,14 +14,17 @@ class Earch
     @slack_client = Slack::Web::Client.new(@setting.slack.api_key)
   end
 
-  def start #TODO: 例外処理
+  def start
     @stream_client.user(@setting.twitter.stream_options) do |object|
       case object
       when Twitter::Tweet
         execute(object)
       end
     end
-  rescue Interrupt
+  rescue SignalException, Interrupt
+  rescue Twitter::Error::ServerError, EOFError, Errno::EPIPE
+    sleep 1
+    retry
   end
 
   def debug(json)
