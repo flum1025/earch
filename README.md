@@ -16,20 +16,20 @@ You must be prepared the configuration file first.
 twitter:
   stream_options:
     replies: all
-  screen_name: flum_      #require
+  screen_name: flum_        #require
   api_key:
-    consumer_key:         #require
-    consumer_secret:      #require
-    access_token:         #require
-    access_token_secret:  #require
+    consumer_key:           #require
+    consumer_secret:        #require
+    access_token:           #require
+    access_token_secret:    #require
 slack:
   api_key:
-    token:                #require
+    token:                  #require
     websocket_ping: 5
   user_icon: ':earch:'
-  notify_channel: '#earch'#require
-  icon: ':flum_:'         #require
-rules:                    require
+  notify_channel: '#earch'  #require
+  icon: ':flum_:'           #require
+rules:                      #require
   - text: !ruby/regexp /.+/
 ```
 
