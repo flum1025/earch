@@ -55,9 +55,9 @@ This key is for `Slack` configuration.
 Argument|Required|Description
 ---|---|---
 api_key|Required|Get from [Bots](https://your-team.slack.com/apps/manage/custom-integrations)
-user_icon|Required|Set the [Slack emoji](https://flum1025.slack.com/customize/emoji)
+user_icon|Optional|Set the [Slack emoji](https://flum1025.slack.com/customize/emoji)
 notify_channel|Required|Specify the notification channel
-icon|Required|Set your Twitter account icon
+icon|Optional|Set your Twitter account icon
 
 ### rules
 
