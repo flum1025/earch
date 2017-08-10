@@ -6,6 +6,23 @@ This application monitors the Twitter timeline and notifies Slack according to t
 
     $ gem install earch
 
+### Docker
+
+you can use docker repository [flum1025/earch](https://hub.docker.com/r/flum1025/earch)
+
+    $ docker run -v $(pwd)/setting.yml:/setting.yml flum1025/earch
+
+self build
+
+    $ git clone https://github.com/flum1025/earch.git
+    $ docker build -t earch .
+
+compose
+
+    $ git clone https://github.com/flum1025/earch.git
+    $ vim setting.yml # make configuration file
+    $ docker-compose up
+
 ## Usage
 
 You must be prepared the configuration file first(The details will be described later). Save configuration file and run the following command.
