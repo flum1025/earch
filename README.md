@@ -8,7 +8,9 @@ This application monitors the Twitter timeline and notifies Slack according to t
 
 ## Usage
 
-You must be prepared the configuration file first.
+You must be prepared the configuration file first. The details will be described later. Save configuration file and run the following command.
+
+    $ earch -s setting.yml
 
 ### Examples
 
@@ -28,14 +30,10 @@ slack:
     websocket_ping: 5
   user_icon: ':earch:'
   notify_channel: '#earch'  #require
-  icon: ':flum_:'           #require
+  icon: ':flum_:'
 rules:                      #require
   - text: !ruby/regexp /.+/
 ```
-
-Save configuration file and run the following command.
-
-    $ earch -s setting.yml
 
 ## Contributing
 
