@@ -4,3 +4,21 @@ end
 
 require 'optparse'
 require 'earch'
+
+Parameter = Hash.new
+
+def optparse
+  opt = OptionParser.new
+  opt.program_name = "Earch"
+  opt.version = Earch::VERSION
+  opt.on('-d VALUES', '--debug VALUES', 'debug'){|v|Parameter[:debug] = v}
+  opt.on('-s VALUES', '--setting VALUES', 'setting file'){|v|Parameter[:file] = v}
+  opt.parse!(ARGV)
+rescue OptionParser::InvalidOption, OptionParser::MissingArgument => e
+  STDERR.puts e.message
+  exit false
+end
+
+optparse
+earch = Earch.new(Parameter[:file])
+Parameter[:debug] ? earch.debug(File.read(Parameter[:debug])) : earch.start

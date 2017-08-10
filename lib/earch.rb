@@ -14,13 +14,21 @@ class Earch
     @slack_client = Slack::Web::Client.new(@setting.slack.api_key)
   end
 
-  def start
+  def start #TODO: 例外処理
     @stream_client.user(@setting.twitter.stream_options) do |object|
       case object
       when Twitter::Tweet
         execute(object)
       end
     end
+  rescue Interrupt
+  end
+
+  def debug(json)
+    Slack::Web::Client.class_eval do
+      define_method :chat_postMessage{|*args|p args}
+    end
+    execute(Twitter::Tweet.new(JSON.parse(json, {:symbolize_names => true})))
   end
 
   private
