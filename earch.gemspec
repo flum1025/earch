@@ -9,19 +9,10 @@ Gem::Specification.new do |spec|
   spec.authors       = ["flum1025"]
   spec.email         = ["flum.1025@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Twitter timeline notify}
+  spec.description   = %q{This application monitors the Twitter timeline and notifies Slack according to the conditions.}
+  spec.homepage      = "https://github.com/flum1025/earch"
   spec.license       = "MIT"
-
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
-  end
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
@@ -32,4 +23,9 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.15"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "pry"
+  spec.add_dependency 'twitter'
+  spec.add_dependency 'twitter-stream-patch'
+  spec.add_dependency 'hashie'
+  spec.add_dependency 'slack-ruby-client'
 end
