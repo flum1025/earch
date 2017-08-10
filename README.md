@@ -63,8 +63,8 @@ icon|Optional|Set your Twitter account icon
 
 The value corresponding to a key is need to `Array`. You can use multiple rules and conditions.
 
-Argument|data type|example
----|---|---
+Argument|DataType|Example|Comments
+---|---|---|---
 text|String|`text: tweet text`
 ||Regexp|'text: !ruby/regexp /^\d+$/'
 user_id
