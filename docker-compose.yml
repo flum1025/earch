@@ -1,0 +1,5 @@
+earch:
+  build: ./
+  restart: always
+  volumes:
+    - "./setting.yml:/setting.yml"
