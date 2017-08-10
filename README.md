@@ -43,12 +43,10 @@ rules:                      #require
 
 This key is for `Twitter` configuration.
 
-####  stream_options
-
-Refer to [Streaming API request parameters](https://dev.twitter.com/streaming/overview/request-parameters)
-#### api_key
-
-Get from [Twitter Application Management](https://apps.twitter.com/)
+Argument|Required|Description
+---|---|---
+stream_options|Optional|Refer to [Streaming API request parameters](https://dev.twitter.com/streaming/overview/request-parameters)
+api_key|Required|Get from [Twitter Application Management](https://apps.twitter.com/)
 
 ### slack
 
