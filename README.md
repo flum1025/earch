@@ -60,7 +60,7 @@ Get from [Bots](https://your-team.slack.com/apps/manage/custom-integrations)
 
 #### user_icon
 
-Set the [Slack emoji](ht  tps://flum1025.slack.com/customize/emoji)
+Set the [Slack emoji](https://flum1025.slack.com/customize/emoji)
 
 ####  notify_channel
 
@@ -71,6 +71,9 @@ Specify the notification channel
 Set your Twitter account icon
 
 ### rules
+
+The value corresponding to a key is need to `Array`. You can use multiple rules and conditions.
+
 
 ## Contributing
 
