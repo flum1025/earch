@@ -83,7 +83,7 @@ user_lang|`user_lang: ja`
 source|Array<String>|`source: [TweetDeck, Twitter for WEB]`
 hashtag|Array<String>|`source: [test, memo]`|
 mention|Array<String>|`source: [twitter, twitterdev]`|String for screen_name
-|Array<Integer>|`source: [123, 456]`|Integer for id
+||Array<Integer>|`source: [123, 456]`|Integer for id
 reply|Boolean|`reply: false`
 quote|Boolean|`quote: false`
 retweet|Boolean|`retweet: false`
