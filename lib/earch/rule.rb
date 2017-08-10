@@ -25,11 +25,11 @@ class Rules
       compare(rule, object.screen_name)
     end
 
-    def favorite(rule, object)
+    def favorite_count(rule, object)
       compare(rule, object.favorite_count)
     end
 
-    def retweet(rule, object)
+    def retweet_count(rule, object)
       compare(rule, object.retweet_count)
     end
 
