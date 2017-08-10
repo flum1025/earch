@@ -8,6 +8,34 @@ This application monitors the Twitter timeline and notifies Slack according to t
 
 ## Usage
 
+You must be prepared the configuration file first.
+
+### Examples
+
+```yaml
+twitter:
+  stream_options:
+    replies: all
+  screen_name: flum_      #require
+  api_key:
+    consumer_key:         #require
+    consumer_secret:      #require
+    access_token:         #require
+    access_token_secret:  #require
+slack:
+  api_key:
+    token:                #require
+    websocket_ping: 5
+  user_icon: ':earch:'
+  notify_channel: '#earch'#require
+  icon: ':flum_:'         #require
+rules:                    require
+  - text: !ruby/regexp /.+/
+```
+
+Save configuration file and run the following command.
+
+    $ earch -s setting.yml
 
 ## Contributing
 
