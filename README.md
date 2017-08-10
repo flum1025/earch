@@ -12,11 +12,11 @@ You must be prepared the configuration file first(The details will be described 
 
     $ earch -s setting.yml
 
-### Configuration File
+## Configuration File
 
 Configuration file is `YAML` format file. YAML key and their allowable values are described below.
 
-#### Example
+### Example
 
 ```yaml
 twitter:
@@ -39,38 +39,38 @@ rules:                      #require
   - text: !ruby/regexp /.+/
 ```
 
--  twitter
+### twitter
 
 This key is for `Twitter` configuration.
 
-  - stream_options
+####  stream_options
 
 Refer to [Streaming API request parameters](https://dev.twitter.com/streaming/overview/request-parameters)
-  - api_key
+#### api_key
 
 Get from [Twitter Application Management](https://apps.twitter.com/)
 
-- slack
+### slack
 
 This key is for `Slack` configuration.
 
-  - api_key
+#### api_key
 
 Get from [Bots](https://your-team.slack.com/apps/manage/custom-integrations)
 
-  - user_icon
+#### user_icon
 
 Set the [Slack emoji](ht  tps://flum1025.slack.com/customize/emoji)
 
-  - notify_channel
+####  notify_channel
 
 Specify the notification channel
 
-  - icon
+####  icon
 
 Set your Twitter account icon
 
-- rules
+### rules
 
 ## Contributing
 
