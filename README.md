@@ -81,9 +81,9 @@ lang|String|`lang: ja`
 user_lang|`user_lang: ja`
 ||Regexp|`user_lang: !ruby/regexp /(ja\|en)/`
 source|Array<String>|`source: [TweetDeck, Twitter for WEB]`
-hashtag|Array<String>|`source: [test, memo]`
-mention|Array<String>|`source: [twitter, twitterdev]`
-|Array<Integer>|`source: [123, 456]`
+hashtag|Array<String>|`source: [test, memo]`|
+mention|Array<String>|`source: [twitter, twitterdev]`|String for screen_name
+|Array<Integer>|`source: [123, 456]`|Integer for id
 reply|Boolean|`reply: false`
 quote|Boolean|`quote: false`
 retweet|Boolean|`retweet: false`
