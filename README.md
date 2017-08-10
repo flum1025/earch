@@ -77,12 +77,13 @@ favorite_count|Integer|`favorite_count: 50`|Get over 50 the number of favorites
 retweet_count|Integer|`retweet_count: 50`
 ||Range|`retweet_count: !ruby/range 10..20`
 lang|String|`lang: ja`
-||Regexp|`lang: !ruby/regexp /(ja|en)/`
+||Regexp|`lang: !ruby/regexp /(ja\|en)/`
 user_lang|`user_lang: ja`
-||Regexp|`user_lang: !ruby/regexp /(ja|en)/`
-source|Array<String>|`source: <br>-TweetDeck`
-hashtag
-mention
+||Regexp|`user_lang: !ruby/regexp /(ja\|en)/`
+source|Array<String>|`source: [TweetDeck, Twitter for WEB]`
+hashtag|Array<String>|`source: [test, memo]`
+mention|Array<String>|`source: [twitter, twitterdev]`
+|Array<Integer>|`source: [123, 456]`
 reply|Boolean|`reply: false`
 quote|Boolean|`quote: false`
 retweet|Boolean|`retweet: false`
