@@ -59,6 +59,7 @@ rules:                      #require
       - test
       - events
     favorite_count: 50
+  - retweet_count: !ruby/range 0..10
   - lang: ja
     retweet: false
     quote: false
