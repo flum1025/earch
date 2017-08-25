@@ -2,6 +2,8 @@
 
 This application monitors the Twitter timeline and notifies Slack according to the conditions.
 
+<img width="631" alt="2017-08-25 11 28 11" src="https://user-images.githubusercontent.com/9972700/29697194-a281ca3e-8988-11e7-9027-67449a9e2e34.png">
+
 ## Installation
 
     $ gem install earch
