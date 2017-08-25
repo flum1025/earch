@@ -39,19 +39,19 @@ Configuration file is `YAML` format file. YAML key and their allowable values ar
 twitter:
   stream_options:
     replies: all
-  screen_name: flum_        #require
+  screen_name: flum_                           #require
   api_key:
-    consumer_key:           #require
-    consumer_secret:        #require
-    access_token:           #require
-    access_token_secret:    #require
+    consumer_key: CONSUMER_KEY                 #require
+    consumer_secret: CONSUMER_SECRET           #require
+    access_token: ACCESS_TOKEN                 #require
+    access_token_secret: ACCESS_TOKEN_SECRET   #require
 slack:
   api_key:
-    token:                  #require
+    token: xxxxxxxxxxxxxxxxxxx                 #require
   user_icon: ':earch:'
-  notify_channel: '#earch'  #require
+  notify_channel: '#earch'                     #require
   icon: ':flum_:'
-rules:                      #require
+rules:                                         #require
   - text: !ruby/regexp /test.*/
     screen_name: twitterdev
   - hashtag:
