@@ -48,7 +48,6 @@ twitter:
 slack:
   api_key:
     token:                  #require
-    websocket_ping: 5
   user_icon: ':earch:'
   notify_channel: '#earch'  #require
   icon: ':flum_:'
