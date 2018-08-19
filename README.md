@@ -1,4 +1,6 @@
-# Earch
+# ~~Earch~~
+
+**Use [twing_earch](https://github.com/flum1025/twing_earch)**
 
 This application monitors the Twitter timeline and notifies Slack according to the conditions.
 
